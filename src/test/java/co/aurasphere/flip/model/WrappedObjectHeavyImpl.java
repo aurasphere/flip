@@ -21,54 +21,68 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package co.aurasphere.flip;
+package co.aurasphere.flip.model;
+
+import co.aurasphere.flip.TestFlip;
 
 /**
- * Exception class for the Flip library. It extends {@link RuntimeException}
- * since all exception thrown by Flip are related to the runtime environment,
- * such as the JVM or platforms like Android and thus it's reasonable to expect
- * that the client code could not recover from such problems.
+ * Support object for {@link TestFlip}.
  * 
  * @author Donato Rimenti
  *
  */
-public class FlipException extends RuntimeException {
+@SuppressWarnings("unused")
+public class WrappedObjectHeavyImpl implements WrappedObject {
+
+	// Bunch of random fields.
+	/**
+	 * The one.
+	 */
+	private int one;
 
 	/**
-	 * The Constant serialVersionUID.
+	 * The two.
 	 */
-	private static final long serialVersionUID = 1L;
+	private long two;
 
 	/**
-	 * Instantiates a new FlipException.
-	 *
-	 * @param message
-	 *            the message.
-	 * @param cause
-	 *            the cause.
+	 * The three.
 	 */
-	public FlipException(String message, Throwable cause) {
-		super(message, cause);
-	}
+	private float three;
 
 	/**
-	 * Instantiates a new FlipException.
-	 *
-	 * @param message
-	 *            the message.
+	 * The four.
 	 */
-	public FlipException(String message) {
-		super(message);
-	}
+	private double four;
 
 	/**
-	 * Instantiates a new FlipException.
-	 *
-	 * @param cause
-	 *            the cause.
+	 * The five.
 	 */
-	public FlipException(Throwable cause) {
-		super(cause);
-	}
+	private boolean five;
+
+	/**
+	 * The six.
+	 */
+	private char six;
+
+	/**
+	 * The seven.
+	 */
+	private int seven;
+
+	/**
+	 * The eight.
+	 */
+	private long eight;
+
+	/**
+	 * The nine.
+	 */
+	private float nine;
+
+	/**
+	 * The ten.
+	 */
+	private double ten;
 
 }

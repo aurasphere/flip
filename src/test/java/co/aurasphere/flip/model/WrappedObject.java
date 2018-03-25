@@ -21,54 +21,16 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package co.aurasphere.flip;
+package co.aurasphere.flip.model;
+
+import co.aurasphere.flip.TestFlip;
 
 /**
- * Exception class for the Flip library. It extends {@link RuntimeException}
- * since all exception thrown by Flip are related to the runtime environment,
- * such as the JVM or platforms like Android and thus it's reasonable to expect
- * that the client code could not recover from such problems.
+ * Support interface for {@link TestFlip}.
  * 
  * @author Donato Rimenti
  *
  */
-public class FlipException extends RuntimeException {
-
-	/**
-	 * The Constant serialVersionUID.
-	 */
-	private static final long serialVersionUID = 1L;
-
-	/**
-	 * Instantiates a new FlipException.
-	 *
-	 * @param message
-	 *            the message.
-	 * @param cause
-	 *            the cause.
-	 */
-	public FlipException(String message, Throwable cause) {
-		super(message, cause);
-	}
-
-	/**
-	 * Instantiates a new FlipException.
-	 *
-	 * @param message
-	 *            the message.
-	 */
-	public FlipException(String message) {
-		super(message);
-	}
-
-	/**
-	 * Instantiates a new FlipException.
-	 *
-	 * @param cause
-	 *            the cause.
-	 */
-	public FlipException(Throwable cause) {
-		super(cause);
-	}
+public interface WrappedObject {
 
 }
